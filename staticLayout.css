@@ -1,8 +1,12 @@
 @font-face{
     font-family: Bluu Next;
-    src: url('./BluuNext-Bold.otf');
+    src: url('./assets/BluuNext-Bold.otf');
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 html{
     margin:0;
@@ -19,18 +23,34 @@ body{
     overflow-x: hidden;
 }
     
+
 .topnavbar{
     padding: 0px;
     bottom: 0px;
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 50px;
+    height: 100px;
     width: 100vw;
     text-align: right;
     background-color: transparent;
     position: absolute;
     }    
+
+#loginbutton{
+    border-style: hidden;
+    border-width: 0px;
+    border-radius: 2%;
+    background-color: #6b63b5;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+}
 
 .topnavbar:hover{
     background-color:  rgb(42,42,54);
@@ -38,10 +58,10 @@ body{
 
 .bottomnavbar{
     padding: 0px;
-    top: 50px;
+    top: 90px;
     left: 0px;
     right: 0px;
-    height: 50px;
+    height: 70px;
     width: 100vw;
     text-align: center;
     background-color: transparent;
@@ -67,7 +87,7 @@ body{
     padding: 0px;
     margin: 20px;
     color: white;
-    display: inline;
+    display: inline-block;
     font-family: serif;
     font-size: 14px;
     font-weight: bold;
@@ -91,7 +111,7 @@ body{
 .potterimage{    
     margin: 0px;
     padding: 10px;
-    background-image: linear-gradient(to bottom, transparent, black 90%), url("./potter.jpg");
+    background-image: linear-gradient(to bottom, transparent, black 90%), url("./assets/potter.jpg");
     background-repeat: no-repeat;
     height: 900px;
     width: 100%;
@@ -99,7 +119,9 @@ body{
     background-position: center;
     background-size: cover;
     z-index: -1;
+    animation: zoom 5s ease-out;
 }
+
 
 .potter{
     text-align: center;
@@ -130,7 +152,7 @@ body{
 
 .background{
     padding: 10px;
-    background-image: linear-gradient(to top, transparent, black), url("./stars.jpg");
+    background-image: linear-gradient(to top, transparent, black), url("./assets/stars.jpg");
     background-position: absolute;
     margin-top: -70px;
     height: 1500px;
@@ -161,13 +183,13 @@ body{
 .gridline1{
     grid-area: gridline1;
     display: inline-block;
-    background-image: url("./train.jpg");
+    background-image: url("./assets/train.jpg");
     height: 200px;
     width: 400px;
     }
 
 .gridline1 h5{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -180,7 +202,7 @@ body{
 }
 
 .gridline1 h3{
-    font-size: 28px;
+    font-size: 34px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -199,13 +221,13 @@ body{
 .gridline2{
     grid-area: gridline2;
     display: inline-block;
-    background-image: url("./makeup.jpg");
+    background-image: url("./assets/makeup.jpg");
     height: 200px;
     width: 400px;
     }
 
 .gridline2 h5{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -218,7 +240,7 @@ body{
 }
 
 .gridline2 h3{
-    font-size: 28px;
+    font-size: 34px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -238,13 +260,13 @@ body{
 .gridline3{
     grid-area: gridline3;
     display: inline-block;
-    background-image: url("./molly.jpg");
+    background-image: url("./assets/molly.jpg");
     height: 200px;
     width: 400px;
     }
 
 .gridline3 h5{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -257,7 +279,7 @@ body{
 }
 
 .gridline3 h3{
-    font-size: 28px;
+    font-size: 34px;
     color: white;
     font-family: "Bluu Next", serif;
     font-weight: bold;
@@ -273,7 +295,7 @@ body{
     margin-top: 200px;
     height: 600px;
     width: 100vw;
-    background-image: linear-gradient(to left, transparent, black), url("./fanclub.jpg");
+    background-image: linear-gradient(to left, transparent, black), url("./assets/fanclub.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
@@ -285,15 +307,19 @@ body{
     color: white;
     text-align: right;
     margin-right: 850px;
+    font-family: "Bluu Next", serif;
 }
 
 .inspirationtext h1{
-    font-size: 60px;
+    font-size: 70px;
+    line-height: 55px;
+    font-family: "Bluu Next", serif;
     line-height: 0.3;
 }
 
 .inspirationtext h5{
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 20px;
     font-family: "Bluu Next", serif;
 }
 
@@ -303,20 +329,77 @@ body{
     line-height: 0.5;
 }
 
-.footer{
+
+
+.footerarea{
     background-color: black;
-    height: 200px;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+    height: 600px;
     color: white;
+    z-index: -1;
+    
+    padding: 20px;
 }
 
-.footer li{
-    list-style: none;
-    display:  inline-block;
-    align-items: center;
+.footercontainer{
+    width: 100%;
+    border-style: solid;
+    border-spacing: 5%;
+    border-width: thin;
+    border-color: white;
+}
+
+.table{
+    padding: 30px;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    margin-left: 20px;
+    width: 70%;
+    position: relative;
     justify-content: left;
+}
+
+.table td{
+    padding: 10px;
+}
+.tableempty{
+    width: 50px;
+}
+
+.wizworld{
+    z-index: 2;
+    width: 30%;
+    justify-content: right;
+    position: relative;
+    margin-left: 1200px;
+    margin-top: -200px;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.wizworld li{
+    list-style: none;
+}
+
+hr{
+    width: 80%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#disclaimer p{
+    margin-left: 110px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+
+
+@keyframes zoom{
+    0%{background-size: 110%;}
+    50%{background-size: 105%;}
+    100%{background-size: 100%;}
 }
 
 @keyframes stars1{
