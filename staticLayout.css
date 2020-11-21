@@ -22,7 +22,7 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
-    
+
 
 .topnavbar{
     padding: 0px;
@@ -30,9 +30,10 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 100px;
+    height: 70px;
     width: 100vw;
     text-align: right;
+    vertical-align: middle;
     background-color: transparent;
     position: absolute;
     }    
@@ -40,7 +41,7 @@ body{
 #loginbutton{
     border-style: hidden;
     border-width: 0px;
-    border-radius: 2%;
+    border-radius: 5%;
     background-color: #6b63b5;
     color: white;
     text-align: center;
@@ -52,24 +53,32 @@ body{
     padding: 0px;
 }
 
+.navlogo{
+    float: none;
+    position: absolute;
+    top: -40%;
+    left: 46%;
+}
+
 .topnavbar:hover{
-    background-color:  rgb(42,42,54);
+    background-color: #242933;
 }
 
 .bottomnavbar{
     padding: 0px;
-    top: 90px;
+    top: 70px;
     left: 0px;
     right: 0px;
-    height: 70px;
+    height: 60px;
     width: 100vw;
     text-align: center;
+    vertical-align: middle;
     background-color: transparent;
     position: absolute;
    }
 
 .bottomnavbar:hover{
-    background-color: rgb(21, 20, 36);
+    background-color: #10141b;
 }
 
 
@@ -125,7 +134,7 @@ body{
 
 .potter{
     text-align: center;
-    margin-top: -700px;
+    margin-top: -760px;
     width: 100vw;
    }
 
@@ -295,7 +304,7 @@ body{
     margin-top: 200px;
     height: 600px;
     width: 100vw;
-    background-image: linear-gradient(to left, transparent, black), url("./assets/fanclub.jpg");
+    background-image: linear-gradient(to left, transparent, black, transparent), url("./assets/fanclub.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: right;
@@ -329,10 +338,23 @@ body{
     line-height: 0.5;
 }
 
-
+.inspirationbutton{
+    border-style: hidden;
+    border-radius: 50px;
+    background-color: #6b63b5;
+    color: white;
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin-left: -260px;
+    }
 
 .footerarea{
-    background-color: black;
+    background-color:  #10141b;
     height: 600px;
     color: white;
     z-index: -1;
@@ -367,15 +389,13 @@ body{
 }
 
 .wizworld{
-    z-index: 2;
+    margin-left: 80vw;
     width: 30%;
-    justify-content: right;
-    position: relative;
-    margin-left: 1200px;
     margin-top: -200px;
     background-size: contain;
     height: 100px;
     width: 100px;
+    position: absolute;
 }
 
 .wizworld li{
